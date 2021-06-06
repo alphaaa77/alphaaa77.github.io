@@ -1,33 +1,67 @@
-  body {
+html {
+  background: linear-gradient(#ffffff, #e59999) no-repeat fixed;
+}
 
-font-family: sans-serif;
-padding-left: 11em;
-   font-family: Georgia, "Times New Roman",
-          Times, serif;
-		  color: purple;
-    background-color: #d8da3d }
-	  ul.navbar {
-     list-style-type: none;
-    padding: 0;
-    margin: 0;
-	position: absolute;
-    top: 2em;
-    left: 1em;
-    width: 9em }
-	h1 {
-  font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif }
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  margin-left: 30px;
+}
+
+.bg {
+  height: 1000px;
+  width: 1000px;
+  position: fixed;
+  left: 50%;
+  margin-left: -500px;
+  top: 50%;
+  margin-top: -500px;
+  z-index: -1;
+}
+
+.java_image {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
+ul.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-left: -30px;
+}
+
+h1 {
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
 ul.navbar li {
   background: white;
-  margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black }
+  margin: 10px 0 0 5px;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px rgba(107, 107, 107, 0.158);
+}
+
 ul.navbar a {
-  text-decoration: none }
+  text-decoration: none;
+}
+
+ul.navbar li:hover {
+  background-color: #ff6767;
+  transition-duration: 0.5s;
+}
+
 a:link {
-  color: blue }
+  color: black;
+}
+
 a:visited {
-  color: purple }
+  color: black;
+}
+
 address {
   margin-top: 1em;
   padding-top: 1em;

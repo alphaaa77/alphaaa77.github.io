@@ -1,26 +1,36 @@
 html {
-  background-image: linear-gradient(#ffffff, #e59999);
-  height: 100%;
+  background: linear-gradient(#ffffff, #e59999) no-repeat fixed;
 }
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
-  background-image: url(/images/backp.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 100%;
+  margin-left: 30px;
+}
+
+.bg {
+  height: 1000px;
+  width: 1000px;
+  position: fixed;
+  left: 50%;
+  margin-left: -500px;
+  top: 50%;
+  margin-top: -500px;
+  z-index: -1;
 }
 
 .java_image {
   width: 400px;
+  display: block;
+  margin: auto;
 }
 
 ul.navbar {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-left: -30px;
 }
 
 h1 {
@@ -32,13 +42,13 @@ ul.navbar li {
   margin: 10px 0 0 5px;
   padding: 2px 10px 2px 10px;
   border: 1px solid black;
+  box-shadow: 4px 4px 4px rgba(107, 107, 107, 0.158);
 }
 
 ul.navbar a {
   text-decoration: none;
 }
 
-a:hover,
 ul.navbar li:hover {
   background-color: #ff6767;
   transition-duration: 0.5s;
