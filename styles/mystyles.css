@@ -26,6 +26,11 @@ body {
   margin: auto;
 }
 
+.javahome {
+  display: block;
+  margin: auto;
+}
+
 ul.navbar {
   display: flex;
   justify-content: center;
